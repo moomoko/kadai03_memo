@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+    <title>ももだいのムードトラッカーアプリ</title>
+</head>
+<body>
+<div class="fade-in delay-2">
+    <div id="mood-selection">
+        <h1>きょうのきぶんはどうかな</h1>
+            <img src="./img/good.png" data-mood="good" class="mood-icon">
+            <img src="./img/soso.png" data-mood="soso" class="mood-icon">
+            <img src="./img/bad.png" data-mood="bad" class="mood-icon">
+    </div>
+</div>        
+    <div id="comment-display" style="display:none;">
+        <p id="mood-text"></p>
+        <img id="mood-image" src="">
+    <div id="comment-btn">
+        <button id="write-note">いまのきもちをかいてみよう</button>
+    </div>
+    </div>
+        
+    <div id="note-screen" style="display:none;">
+        <textarea id="note-input"></textarea>
+        <button id="save-note">とうろく</button>
+    </div>
+        
+     <div id="calendar-screen" style="display:none;">
+        <div id="calendar"></div>
+    </div>
+        
+    <div id="day-details" style="display:none;">
+        <p id="selected-day-mood"></p>
+        <p id="selected-day-note"></p>
+    </div>
+    
+    <div class="fade-in delay-2">
+        <button id="calendar-btn">カレンダーをみる</button>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
